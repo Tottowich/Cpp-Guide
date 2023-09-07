@@ -13,6 +13,7 @@
     - [Hello World 🌍](#hello-world-)
   - [Concepts \& Vocabulary 📚](#concepts--vocabulary-)
   - [Tasks to Complete 📝](#tasks-to-complete-)
+  - [Tasks to Complete 📝](#tasks-to-complete--1)
     - [Beginner 🌱](#beginner-)
       - [Emoji Translator](#emoji-translator)
       - [Guess the Number](#guess-the-number)
@@ -31,9 +32,14 @@
       - [Ray Tracer](#ray-tracer)
       - [Compiler Design](#compiler-design)
       - [IoT Home Automation](#iot-home-automation)
+  - [Completed Tasks ✅  ](#completed-tasks---)
+    - [Beginner 🌱](#beginner--1)
+    - [Intermediate ⚙️](#intermediate-️-1)
+    - [Advanced 🔥](#advanced--1)
   - [Debugging Tips 🐛](#debugging-tips-)
   - [Finding Help Online 🌐](#finding-help-online-)
   - [Contributing 🤝](#contributing-)
+
 ---
 
 ## Introduction 🌟
@@ -42,7 +48,6 @@ Welcome to this amazing journey into the world of C++! Whether you're a complete
 ---
 
 ## Getting Started 🛠
-
 ### Setting Up Your Environment 🖥
 1. [Installing a C++ Compiler](docs/SettingUpCompiler.md)
 2. [Configuring an IDE](docs/SettingUpIDE.md)
@@ -60,6 +65,7 @@ Welcome to this amazing journey into the world of C++! Whether you're a complete
 
 ---
 
+## Tasks to Complete 📝
 ## Tasks to Complete 📝
 
 ### Beginner 🌱
@@ -109,6 +115,33 @@ Build a simple compiler for a custom language.
 
 #### [IoT Home Automation](tasks/advanced/iot-home-automation.md)
 Automate tasks around your home using IoT.
+
+
+---
+
+## Completed Tasks ✅  <!-- New Section -->
+Keep track of your progress by marking the tasks you've completed!
+
+### Beginner 🌱
+- [ ] Emoji Translator
+- [ ] Guess the Number
+- [ ] Simple Calculator
+- [ ] Text-based Adventure
+- [ ] Weather App
+
+### Intermediate ⚙️
+- [ ] File Encryption
+- [ ] Chat Server
+- [ ] Web Scraper
+- [ ] Game of Life
+- [ ] Music Library
+
+### Advanced 🔥
+- [ ] Machine Learning Basics
+- [ ] Blockchain Simulation
+- [ ] Ray Tracer
+- [ ] Compiler Design
+- [ ] IoT Home Automation
 
 ---
 
