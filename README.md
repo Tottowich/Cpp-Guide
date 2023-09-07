@@ -38,6 +38,7 @@
   - [Debugging Tips 🐛](#debugging-tips-)
   - [Finding Help Online 🌐](#finding-help-online-)
   - [Contributing 🤝](#contributing-)
+  - [Project Structure 🗺](#project-structure-)
 
 ---
 
@@ -119,7 +120,6 @@ Build a simple compiler for a custom language.
 #### A5 [IoT Home Automation](tasks/advanced/iot-home-automation.md)
 Automate tasks around your home using IoT.
 
-
 ---
 
 ## Completed Tasks ✅  <!-- New Section -->
@@ -163,4 +163,36 @@ Interested in contributing? Check out the [contributing guidelines](CONTRIBUTING
 
 ---
 
+## Project Structure 🗺 
+Understand how this repository is organized to make your journey smoother:
+
+- `docs/`: Contains documentation files explaining the setup process, debugging tips, and more.
+- `tasks/`: Holds the task instructions, categorized into beginner, intermediate, and advanced levels.
+- `code/`: Where your code for each task should go, organized by level and task name.
+  - `code/Beginner/`: Place beginner-level task solutions here.
+  - `code/Intermediate/`: Place intermediate-level task solutions here.
+  - `code/Advanced/`: Place advanced-level task solutions here.
+- `CONTRIBUTING.md`: Guidelines for contributing to this repository.
 Feel free to clone this repo, and let's start coding! 🎉
+
+```
+Cpp-Guide
+├─ LICENSE
+├─ README.md
+├─ code
+│  ├─ advanced
+│  ├─ beginner
+│  └─ intermediate
+├─ docs
+│  ├─ SettingUpCompiler.md
+│  ├─ SettingUpIDE.md
+│  └─ VCPKG_CMake.md
+├─ images
+│  └─ banner.png
+└─ tasks
+   ├─ advanced
+   ├─ beginner
+   │  └─ hello-world.md
+   └─ intermediate
+
+```
