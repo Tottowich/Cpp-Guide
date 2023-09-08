@@ -14,7 +14,7 @@ create_test_script_and_markdown() {
     local test_script_path="tests/$level/$task_name"
     local test_script_file="$test_script_path/test_$task_name.sh"
     local markdown_path="tasks/$level/$task_name"
-    local markdown_file="$markdown_path/README.md"
+    local markdown_file="$markdown_path/$task_name.md"
     
     # Create the directories if they don't exist
     mkdir -p "$test_script_path"
