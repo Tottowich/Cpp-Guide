@@ -5,23 +5,25 @@ format_label() {
     echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-'
 }
 
-# Function to create test script and markdown file if they don't exist
-create_test_script_and_markdown() {
+# Function to create test script if it doesn't exist
+create_test_script() {
     local task_name="$1"
     local level="$2"
     
     # Create the test script path
     local test_script_path="tests/$level/$task_name"
     local test_script_file="$test_script_path/test_$task_name.sh"
-    local markdown_path="tasks/$level/$task_name"
-    local markdown_file="$markdown_path/README.md"
     
     # Create the directories if they don't exist
+
     mkdir -p "$test_script_path"
     
     # Check if the test script file already exists
     if [ ! -f "$test_script_file" ]; then
+        # echo "Creating test script for $task_name ($level)..."
+        
         # Create the test script
+        # echo 
         echo "#!/bin/bash" > "$test_script_file"
         echo "echo 'In-complete test script for $task_name ($level)'" >> "$test_script_file"
         echo "exit 3" >> "$test_script_file"
@@ -29,17 +31,7 @@ create_test_script_and_markdown() {
         chmod +x "$test_script_file"
     else
         echo "Test script for $task_name ($level) already exists."
-    fi
-    mkdir -p "$markdown_path"
-    # Check if the markdown file already exists
-    if [ ! -f "$markdown_file" ]; then
-        # Create the markdown file
-        echo "# $task_name" > "$markdown_file"
-        echo "## Level: $level" >> "$markdown_file"
-        echo "## Description" >> "$markdown_file"
-        echo "This is an incomplete description for $task_name." >> "$markdown_file"
-    else
-        echo "Markdown file for $task_name ($level) already exists."
+        echo "exit 3" >> "$test_script_file"
     fi
 }
 
@@ -52,7 +44,7 @@ while read -r line; do
         task_name=$(echo "$line" | sed 's/^- \[ \] //')
         formatted_task_name=$(format_label "$task_name")
         
-        # Create the test script and markdown file for each task if they don't exist
-        create_test_script_and_markdown "$formatted_task_name" "$formatted_level"
+        # Create the test script for each task if it doesn't exist
+        create_test_script "$formatted_task_name" "$formatted_level"
     fi
 done < <(awk '/## Completed Tasks ✅/,0' README.md)
