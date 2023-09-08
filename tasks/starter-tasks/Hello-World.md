@@ -12,7 +12,7 @@ Welcome to the first actual coding task of your C++ journey! We're going to star
   - [Understanding Libraries 📚](#understanding-libraries-)
   - [Project Structure 🏗](#project-structure-)
   - [Writing the Code ✍️](#writing-the-code-️)
-    - [Line-by-Line Breakdown of `hello_world.cpp` 🔍](#line-by-line-breakdown-of-hello_worldcpp-)
+    - [Line-by-Line Breakdown of `main.cpp` 🔍](#line-by-line-breakdown-of-maincpp-)
       - [`#include <iostream>` 📚](#include-iostream-)
       - [`int main()` 🚀](#int-main-)
       - [`{` and `}` 📏](#-and--)
@@ -25,6 +25,8 @@ Welcome to the first actual coding task of your C++ journey! We're going to star
     - [Compiling and Running the Code 🛠](#compiling-and-running-the-code-)
     - [Where to Place Your Solution 🗂](#where-to-place-your-solution-)
     - [Test Your Code! 🧪](#test-your-code-)
+      - [Linux](#linux)
+      - [Windows](#windows)
 
 ---
 
@@ -100,7 +102,7 @@ int main() {
 }
 ```
 
-### Line-by-Line Breakdown of `hello_world.cpp` 🔍
+### Line-by-Line Breakdown of `main.cpp` 🔍
 
 #### `#include <iostream>` 📚
 This line tells the compiler to include the `<iostream>` standard library. This library contains functions for input and output operations. The `#include` directive literally inserts the contents of the specified file into the current file, almost as if you had copied and pasted it yourself!
@@ -137,7 +139,7 @@ This line tells the operating system that the program executed successfully. The
 ### Creating the File 📄
 
 1. **Navigate to this Repository**: Open your terminal and navigate to the root of this repository. 
-2. **Create the C++ File**: Navigate into your task folder using `cd code/beginner/hello-world` and then create a new file named `main.cpp` using `touch main.cpp` (Linux) or `echo. > main.cpp` (Windows). It can also be created manually in the VS Code UI.
+2. **Create the C++ File**: Navigate into your task folder using `cd code/beginner/Hello-World` and then create a new file named `main.cpp` using `touch main.cpp` (Linux) or `echo. > main.cpp` (Windows). It can also be created manually in the VS Code UI.
 
 ### Writing the Code ✍️
 
@@ -146,7 +148,7 @@ This line tells the operating system that the program executed successfully. The
 
 ### Compiling and Running the Code 🛠
 
-1. **Compile the Code**: In your terminal, make sure you are in the `code/beginner/hello-world` directory. Run `g++ main.cpp -o HelloWorld`.
+1. **Compile the Code**: In your terminal, make sure you are in the `code/beginner/Hello-World` directory. Run `g++ main.cpp -o HelloWorld`.
    - This will compile `main.cpp` and create an executable named `HelloWorld`.
 2. **Run the Program**: Execute the program by running `./HelloWorld` (Linux) or `HelloWorld.exe` (Windows).
 
@@ -154,13 +156,25 @@ Congrats, you should see `Hello, World!` printed on your terminal! 🎉
 
 ### Where to Place Your Solution 🗂
 
-Make sure your `main.cpp` file is saved in the `code/Beginner/Hello-World` folder. This ensures that each of your task solutions stays organized by level and task name!
+Make sure your `main.cpp` file is saved in the `code/beginner/Hello-World` folder. This ensures that each of your task solutions stays organized by level and task name!
 
 ### Test Your Code! 🧪
 
-To test your code, run the following command in your terminal:
+To test your code. Navigate back to the root of the repository and run the following command:
 
+#### Linux
 ```bash
+./test.sh HelloWorld
+```
+#### Windows
+```bash
+test.bat HelloWorld
+```
 
+This will run a test to ensure your code is correct. If you see `Test Passed!`, you're good to go! If not, check the error message and try again.
+
+That's it! You've successfully written, compiled, and tested your first C++ program. Now you're ready to move on to more complex tasks and challenges. Keep coding and have fun! 🚀
+
+Now you may move on to the next task which is to familiarize yourself with [concepts and the vocabulary of C++](../../docs/ConceptsAndVocabulary.md).
 
 
