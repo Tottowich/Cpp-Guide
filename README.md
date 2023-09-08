@@ -1,9 +1,11 @@
-# Learn C++: Your Ultimate C++ Guide 🚀
+# Learn C++: Your Ultimate C++ Guide 🚀 (In Progress)
 
 ![Banner Image](images/banner.png)
-
+## Information
+This repository is currently buing built. If you'd like to contribute by writing tasks/tests, please see the [Contributing](CONTRIBUTING.md) guidelines.
 ## Table of Contents 📚
-- [Learn C++: Your Ultimate C++ Guide 🚀](#learn-c-your-ultimate-c-guide-)
+- [Learn C++: Your Ultimate C++ Guide 🚀 (In Progress)](#learn-c-your-ultimate-c-guide--in-progress)
+  - [Information](#information)
   - [Table of Contents 📚](#table-of-contents-)
   - [Introduction 🌟](#introduction-)
   - [Getting Started 🛠](#getting-started-)
@@ -41,6 +43,11 @@
   - [Finding Help Online 🌐](#finding-help-online-)
   - [Contributing 🤝](#contributing-)
   - [Project Structure 🗺](#project-structure-)
+    - [Code Directories 📂](#code-directories-)
+    - [Documentation 📚](#documentation-)
+    - [Task Descriptions 📝](#task-descriptions-)
+    - [Tests 🧪](#tests-)
+    - [Miscellaneous 🌈](#miscellaneous-)
 
 ---
 
@@ -199,36 +206,58 @@ Interested in contributing? Check out the [contributing guidelines](CONTRIBUTING
 ---
 
 ## Project Structure 🗺 
-Understand how this repository is organized to make your journey smoother:
 
-- `docs/`: Contains documentation files explaining the setup process, debugging tips, and more.
-- `tasks/`: Holds the task instructions, categorized into Beginner, Intermediate, and Advanced levels.
-- `code/`: Where your code for each task should go, organized by level and task name.
-  - `code/beginner/`: Place Beginner-level task solutions here.
-  - `code/intermediate/`: Place Intermediate-level task solutions here.
-  - `code/advanced/`: Place Advanced-level task solutions here.
-- `CONTRIBUTING.md`: Guidelines for contributing to this repository.
-Feel free to clone this repo, and let's start coding! 🎉
+Here's an overview of the repository to help you navigate through the project:
 
-```
-Cpp-Guide
-├─ LICENSE
-├─ README.md
-├─ code
-│  ├─ Advanced
-│  ├─ Beginner
-│  └─ Intermediate
-├─ docs
-│  ├─ SettingUpCompiler.md
-│  ├─ SettingUpIDE.md
-│  └─ VCPKG_CMake.md
-├─ images
-│  └─ banner.png
-├─ tasks
-│  ├─ Advanced
-│  ├─ Beginner
-│  │  └─ Hello-World.md
-│  └─ Intermediate
-└─ tests
+- `CONTRIBUTING.MD`: Guidelines for contributing to this repository.
+- `LICENSE`: The license under which this project is available.
+- `README.md`: The main documentation file you are currently reading.
+- `create_files.sh`: A shell script to automatically create files for tasks.
+- `reset_tasks.sh`: A shell script to reset all task checkboxes in this README.
+- `test.sh`: Main script for running the tests for tasks.
 
-```
+---
+
+### Code Directories 📂
+
+- `code/`: Root directory for all the code related to tasks.
+  - `advanced/`: Place Advanced-level task solutions here.
+  - `beginner/`: Place Beginner-level task solutions here.
+  - `intermediate/`: Place Intermediate-level task solutions here.
+  - `starter-tasks/`: Code for starter tasks, e.g., "Hello World".
+
+---
+
+### Documentation 📚
+
+- `docs/`: Contains various documentation files.
+  - `SettingUpCompiler.md`: Instructions for setting up a C++ compiler.
+  - `SettingUpIDE.md`: Guide to setting up your Integrated Development Environment.
+  - `VCPKG_CMake.md`: Instructions for setting up VCPKG and CMake.
+
+---
+
+### Task Descriptions 📝
+
+- `tasks/`: Root directory for all task descriptions, organized by difficulty level.
+  - `advanced/`: Advanced-level tasks with individual markdown files for each.
+  - `beginner/`: Beginner-level tasks with individual markdown files for each.
+  - `intermediate/`: Intermediate-level tasks with individual markdown files for each.
+  - `starter-tasks/`: Starter tasks like "Hello World".
+
+---
+
+### Tests 🧪
+
+- `tests/`: Root directory for all test scripts, also organized by difficulty level.
+  - `advanced/`: Test scripts for advanced-level tasks.
+  - `beginner/`: Test scripts for beginner-level tasks.
+  - `intermediate/`: Test scripts for intermediate-level tasks.
+  - `starter-tasks/`: Test scripts for starter tasks like "Hello World".
+
+---
+
+### Miscellaneous 🌈
+
+- `images/`: Store images used in the README or other markdown files.
+  - `banner.png`: The banner image displayed at the top of the README.
